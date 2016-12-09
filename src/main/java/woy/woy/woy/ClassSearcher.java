@@ -65,7 +65,8 @@ public class ClassSearcher implements ISearcher {
             dates.add(tmp);
         }
 
-        System.out.println(result);
+        if (nodes.isEmpty())
+            return new String[]{"Nothing found"};
 
 //        long result = dates.stream().reduce((n1, n2) -> n1 ^ n2).get();
 
